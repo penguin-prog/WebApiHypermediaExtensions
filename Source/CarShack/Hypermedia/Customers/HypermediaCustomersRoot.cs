@@ -23,6 +23,12 @@ namespace CarShack.Hypermedia.Customers
         [HypermediaAction(Name = "CreateQuery", Title = "Query the Customers collection.")]
         public HypermediaAction<CustomerQuery> CreateQueryAction { get; private set; }
 
+        [HypermediaEntity("BestCustomer")]
+        public HypermediaObjectReferenceBase BestCustomer { get; private set; } // todo: format this HTO to entities in the siren formatter
+
+        //[HypermediaNavigationLink("GreatSite")] 
+        //public HypermediaObjectReferenceBase GreatSiteLink { get; private set; } // todo: format this HTO to entities in the siren formatter, maybe make this a HypermediaLink<T>
+
         public HypermediaCustomersRoot(ICustomerRepository customerRepository)
         {
             this.customerRepository = customerRepository;
