@@ -129,7 +129,9 @@
 		<xs:attribute type="xs:string" name="rel" use="required"/>
 		<xs:attribute type="xs:string" name="document" use="optional"/>
 		<xs:attribute type="xs:string" name="query" use="optional"/>
+		<xs:attribute type="xs:string" name="contentType" use="optional" />
 		<xs:attribute type="xs:string" name="parameterTypeName" use="optional"/>
+		<xs:attribute type="xs:boolean" name="mandatory" use="required" />
 	</xs:complexType>
 
 	<!-- Others -->
